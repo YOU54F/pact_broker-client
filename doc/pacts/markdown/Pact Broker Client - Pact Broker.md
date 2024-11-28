@@ -1076,9 +1076,7 @@ Pact Broker will respond with:
     "provider": {
       "name": "Pricing Service"
     },
-    "interactions": [
-
-    ]
+    "interactions": []
   }
 }
 ```
@@ -2134,9 +2132,7 @@ Given **'Condor' already exist in the pact-broker, but the 'Pricing Service' doe
     "provider": {
       "name": "Pricing Service"
     },
-    "interactions": [
-
-    ]
+    "interactions": []
   }
 }
 ```
@@ -2172,9 +2168,7 @@ Given **the 'Pricing Service' already exists in the pact-broker**, upon receivin
     "provider": {
       "name": "Pricing Service"
     },
-    "interactions": [
-
-    ]
+    "interactions": []
   }
 }
 ```
@@ -2210,9 +2204,7 @@ Given **an error occurs while publishing a pact**, upon receiving **a request to
     "provider": {
       "name": "Pricing Service"
     },
-    "interactions": [
-
-    ]
+    "interactions": []
   }
 }
 ```
@@ -2246,9 +2238,7 @@ Given **the 'Pricing Service' and 'Condor' already exist in the pact-broker, and
     "provider": {
       "name": "Pricing Service"
     },
-    "interactions": [
-
-    ]
+    "interactions": []
   }
 }
 ```
@@ -2284,9 +2274,7 @@ Given **the 'Pricing Service' and 'Condor' already exist in the pact-broker, and
     "provider": {
       "name": "Pricing Service"
     },
-    "interactions": [
-
-    ]
+    "interactions": []
   }
 }
 ```
@@ -2564,9 +2552,7 @@ Pact Broker will respond with:
     "provider": {
       "name": "Pricing Service"
     },
-    "interactions": [
-
-    ]
+    "interactions": []
   }
 }
 ```
@@ -2637,9 +2623,7 @@ Pact Broker will respond with:
     "provider": {
       "name": "Pricing Service"
     },
-    "interactions": [
-
-    ]
+    "interactions": []
   }
 }
 ```

@@ -45,8 +45,7 @@
       },
       "response": {
         "status": 204,
-        "headers": {
-        }
+        "headers": {}
       }
     },
     {
@@ -55,8 +54,7 @@
       "request": {
         "method": "get",
         "path": "/pacts/latest",
-        "headers": {
-        }
+        "headers": {}
       },
       "response": {
         "status": 200,
@@ -121,8 +119,7 @@
       "request": {
         "method": "get",
         "path": "/pacticipants",
-        "headers": {
-        }
+        "headers": {}
       },
       "response": {
         "status": 200,
@@ -176,8 +173,7 @@
       "request": {
         "method": "get",
         "path": "/pacticipants/Pricing%20Service",
-        "headers": {
-        }
+        "headers": {}
       },
       "response": {
         "status": 200,
@@ -220,13 +216,11 @@
       "request": {
         "method": "get",
         "path": "/pacticipants/Pricing%20Service",
-        "headers": {
-        }
+        "headers": {}
       },
       "response": {
         "status": 404,
-        "headers": {
-        }
+        "headers": {}
       }
     },
     {
@@ -827,9 +821,7 @@
           "provider": {
             "name": "Pricing Service"
           },
-          "interactions": [
-
-          ]
+          "interactions": []
         }
       },
       "response": {
@@ -862,9 +854,7 @@
           "provider": {
             "name": "Pricing Service"
           },
-          "interactions": [
-
-          ]
+          "interactions": []
         }
       },
       "response": {
@@ -897,9 +887,7 @@
           "provider": {
             "name": "Pricing Service"
           },
-          "interactions": [
-
-          ]
+          "interactions": []
         }
       },
       "response": {
@@ -932,9 +920,7 @@
           "provider": {
             "name": "Pricing Service"
           },
-          "interactions": [
-
-          ]
+          "interactions": []
         }
       },
       "response": {
@@ -967,9 +953,7 @@
           "provider": {
             "name": "Pricing Service"
           },
-          "interactions": [
-
-          ]
+          "interactions": []
         }
       },
       "response": {
@@ -1040,13 +1024,11 @@
       "request": {
         "method": "get",
         "path": "/pacts/provider/Pricing%20Service/latest/prod",
-        "headers": {
-        }
+        "headers": {}
       },
       "response": {
         "status": 200,
-        "headers": {
-        },
+        "headers": {},
         "body": {
           "_links": {
             "provider": {
@@ -1075,13 +1057,11 @@
       "request": {
         "method": "get",
         "path": "/pacts/provider/Pricing%20Service/latest",
-        "headers": {
-        }
+        "headers": {}
       },
       "response": {
         "status": 200,
-        "headers": {
-        },
+        "headers": {},
         "body": {
           "_links": {
             "provider": {
@@ -1110,8 +1090,7 @@
       "request": {
         "method": "get",
         "path": "/pacts/provider/Pricing%20Service/consumer/Condor/version/1.3.0",
-        "headers": {
-        }
+        "headers": {}
       },
       "response": {
         "status": 200,
@@ -1125,9 +1104,7 @@
           "provider": {
             "name": "Pricing Service"
           },
-          "interactions": [
-
-          ]
+          "interactions": []
         }
       }
     },
@@ -1137,8 +1114,7 @@
       "request": {
         "method": "get",
         "path": "/pacts/provider/Pricing%20Service/consumer/Condor/latest",
-        "headers": {
-        }
+        "headers": {}
       },
       "response": {
         "status": 200,
@@ -1153,9 +1129,7 @@
           "provider": {
             "name": "Pricing Service"
           },
-          "interactions": [
-
-          ]
+          "interactions": []
         },
         "matchingRules": {
           "$.headers.Content-Type": {
@@ -1171,13 +1145,11 @@
       "request": {
         "method": "get",
         "path": "/pacts/provider/Pricing%20Service/consumer/Condor/latest",
-        "headers": {
-        }
+        "headers": {}
       },
       "response": {
         "status": 404,
-        "headers": {
-        }
+        "headers": {}
       }
     },
     {
@@ -1202,9 +1174,7 @@
           "provider": {
             "name": "Pricing Service"
           },
-          "interactions": [
-
-          ]
+          "interactions": []
         }
       }
     },
@@ -1468,8 +1438,7 @@
       },
       "response": {
         "status": 404,
-        "headers": {
-        }
+        "headers": {}
       }
     },
     {

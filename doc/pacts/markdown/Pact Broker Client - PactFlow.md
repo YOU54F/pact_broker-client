@@ -256,11 +256,9 @@ PactFlow will respond with:
     },
     "_links": {
       "pb:pacticipant-version-tags": [
-        {
-        }
+        {}
       ],
-      "pb:branch-version": {
-      }
+      "pb:branch-version": {}
     }
   }
 }
