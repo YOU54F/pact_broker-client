@@ -23,3 +23,8 @@ shared_context "pact broker" do
   let(:post_request_headers)    { { 'Content-Type' => 'application/json', 'Accept' => 'application/hal+json'} }
   let(:get_request_headers)     { { 'Accept' => 'application/hal+json'} }
 end
+
+shared_context "pact broker - ffi overrides" do
+  let(:pact_hash) { PactBroker::Client::PactHash[consumer: {name: 'Condor'}, interactions: [], provider: {name: 'Pricing Service'}] }
+  let(:broker_base_url) { 'http://localhost:9999' }
+end
