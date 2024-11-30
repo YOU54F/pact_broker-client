@@ -23,6 +23,7 @@ module PactBroker::Client
                   path: "/pacts/provider/Pricing%20Service/latest/prod",
                   headers: {}).
               will_respond_with(
+                  headers: {'Content-Type' => match_regex(%r{application/.*json.*},'application/hal+json')},
                   status: 200,
                   body: response_body)
         end
@@ -44,6 +45,7 @@ module PactBroker::Client
                   path: "/pacts/provider/Pricing%20Service/latest",
                   headers: {}).
               will_respond_with(
+                  headers: {'Content-Type' => match_regex(%r{application/.*json.*},'application/hal+json')},
                   status: 200,
                   body: response_body)
         end

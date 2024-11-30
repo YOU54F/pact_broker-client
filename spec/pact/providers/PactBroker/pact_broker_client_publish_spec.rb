@@ -126,10 +126,10 @@ module PactBroker::Client
               body: pact_hash ).
             will_respond_with(
               status: 500,
-              headers: {'Content-Type' => match_regex(%r{application/.*json},'application/hal+json')},
+              headers: {'Content-Type' => match_regex(%r{application/.*json.*},'application/hal+json')},
               body: {
                 error: {
-                  message: Pact::Term.new(matcher: /.*/, generate: 'An error occurred')
+                  message: match_regex(/.*/,'An error occurred')
                 }
               }
             )

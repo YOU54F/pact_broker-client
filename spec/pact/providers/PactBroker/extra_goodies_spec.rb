@@ -33,7 +33,7 @@ module PactBroker::Client
               method: :get,
               path: '/pacts/latest',
               headers: {} ).
-            will_respond_with( headers: {'Content-Type' => match_regex(%r{application/hal\+json},'application/hal+json')},
+            will_respond_with( headers: {'Content-Type' => match_regex(%r{application/hal\+json.*},'application/hal+json')},
               status: 200,
               body: response_body
             )
@@ -57,7 +57,7 @@ module PactBroker::Client
               method: :get,
               path: '/pacticipants',
               headers: {} ).
-            will_respond_with( headers: {'Content-Type' => match_regex(%r{application/hal\+json},'application/hal+json')},
+            will_respond_with( headers: {'Content-Type' => match_regex(%r{application/hal\+json.*},'application/hal+json')},
               status: 200,
               body: response_body
             )
@@ -83,7 +83,7 @@ module PactBroker::Client
               method: :get,
               path: '/pacticipants/Pricing%20Service',
               headers: {} ).
-            will_respond_with( headers: {'Content-Type' => match_regex(%r{application/hal\+json},'application/hal+json')},
+            will_respond_with( headers: {'Content-Type' => match_regex(%r{application/hal\+json.*},'application/hal+json')},
               status: 200,
               body: response_body
             )

@@ -107,7 +107,7 @@ RSpec.describe "recording an undeployment", pact: true do
                 applicationInstance: application_instance,
                 _links: {
                   self: {
-                    href: match_regex( /^http/, pact_broker_base_url + deployed_version_placeholder_path)
+                    href: match_regex( /^http.*/, pact_broker_base_url + deployed_version_placeholder_path)
                   }
                 }
               }

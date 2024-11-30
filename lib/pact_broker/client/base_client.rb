@@ -108,6 +108,8 @@ module PactBroker
       end
 
       def put url, options = {}, &block
+      puts "url: #{url}"
+      puts "options: #{options}"
         self.class.put(url, @default_options.merge(options), &block)
       end
 

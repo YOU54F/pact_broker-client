@@ -21,7 +21,8 @@ describe PactBroker::Client::Versions, pact: true do
         with_request(
             method: :put,
             path: '/pacticipants/Condor/versions/1.3.0/tags/prod',
-            headers: default_request_headers).
+            headers: default_request_headers,
+            body:{}).
           will_respond_with(
             status: 201,
             headers: pact_broker_response_headers,
@@ -29,9 +30,9 @@ describe PactBroker::Client::Versions, pact: true do
               _links: {
                 self: {
                   href:
-                  Pact::Term.new(
-                    generate: 'http://localhost:9999/pacticipants/Condor/versions/1.3.0/tags/prod',
-                    matcher: %r{http://.*/pacticipants/Condor/versions/1.3.0/tags/prod})
+                  match_regex(
+                    %r{http://.*/pacticipants/Condor/versions/1.3.0/tags/prod},
+                    'http://localhost:9999/pacticipants/Condor/versions/1.3.0/tags/prod')
                 }
               }
             }
@@ -51,7 +52,8 @@ describe PactBroker::Client::Versions, pact: true do
         with_request(
           method: :put,
           path: '/pacticipants/Condor/versions/1.3.0/tags/prod',
-          headers: default_request_headers).
+          headers: default_request_headers,
+          body:{}).
           will_respond_with(
             status: 201,
             headers: pact_broker_response_headers,
@@ -59,9 +61,10 @@ describe PactBroker::Client::Versions, pact: true do
               _links: {
                 self: {
                   href:
-                  Pact::Term.new(
-                    generate: 'http://localhost:9999/pacticipants/Condor/versions/1.3.0/tags/prod',
-                    matcher: %r{http://.*/pacticipants/Condor/versions/1.3.0/tags/prod})
+                  match_regex(
+                    %r{http://.*/pacticipants/Condor/versions/1.3.0/tags/prod},
+                    'http://localhost:9999/pacticipants/Condor/versions/1.3.0/tags/prod'
+                    )
                 }
               }
             }
@@ -82,7 +85,8 @@ describe PactBroker::Client::Versions, pact: true do
         with_request(
             method: :put,
             path: '/pacticipants/Condor/versions/1.3.0/tags/prod',
-            headers: default_request_headers).
+            headers: default_request_headers,
+            body:{}).
           will_respond_with(
             status: 200,
             headers: pact_broker_response_headers,
@@ -90,9 +94,10 @@ describe PactBroker::Client::Versions, pact: true do
               _links: {
                 self: {
                   href:
-                  Pact::Term.new(
-                    generate: 'http://localhost:9999/pacticipants/Condor/versions/1.3.0/tags/prod',
-                    matcher: %r{http://.*/pacticipants/Condor/versions/1.3.0/tags/prod})
+                  match_regex(
+                    %r{http://.*/pacticipants/Condor/versions/1.3.0/tags/prod},
+                    'http://localhost:9999/pacticipants/Condor/versions/1.3.0/tags/prod'
+                    )
                 }
               }
             }

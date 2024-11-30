@@ -2399,7 +2399,9 @@ Given **version 5556b8149bf8bac76bc30f50a8a2dd4c22c85f30 of pacticipant Foo exis
   "headers": {
     "Content-Type": "application/json",
     "Accept": "application/hal+json"
-  }
+  },
+  "body": {
+        }
 }
 ```
 Pact Broker will respond with:
@@ -2635,7 +2637,9 @@ Given **'Condor' exists in the pact-broker with version 1.3.0, tagged with 'prod
   "path": "/pacticipants/Condor/versions/1.3.0/tags/prod",
   "headers": {
     "Content-Type": "application/json"
-  }
+  },
+  "body": {
+        }
 }
 ```
 Pact Broker will respond with:
@@ -2662,7 +2666,9 @@ Given **'Condor' does not exist in the pact-broker**, upon receiving **a request
   "path": "/pacticipants/Condor/versions/1.3.0/tags/prod",
   "headers": {
     "Content-Type": "application/json"
-  }
+  },
+  "body": {
+        }
 }
 ```
 Pact Broker will respond with:
@@ -2689,7 +2695,9 @@ Given **'Condor' exists in the pact-broker**, upon receiving **a request to tag 
   "path": "/pacticipants/Condor/versions/1.3.0/tags/prod",
   "headers": {
     "Content-Type": "application/json"
-  }
+  },
+  "body": {
+        }
 }
 ```
 Pact Broker will respond with:

@@ -29,7 +29,7 @@ describe PactBroker::Client::Versions, pact: true do
             body: {
               _links: {
                 :'pb:latest-version' => {
-                  href: match_regex(/http:\/\/.*{pacticipant}/, latest_version_url)
+                  href: match_regex(/http:\/\/.*{pacticipant}\/latest-version/, latest_version_url)
                 }
               }
             }
